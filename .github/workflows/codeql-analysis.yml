@@ -1,0 +1,6 @@
+# Initialize the CodeQL tools for scanning.
+name: Initialize CodeQL
+uses: github/codeql-action/init@v1
+with:
+  language: ${{ matrix.language }}
+  queries: github/codeql/java/ql/src/experimental/Security/CWE/CWE-020/Log4jJndiInjection.ql@main
